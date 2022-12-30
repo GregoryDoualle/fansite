@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(249, 249, 241);
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(188, 170, 64);
+}
+nav h1 {
+    color: rgb(188, 170, 64);
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+}
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a {
+    text-decoration: none;
+    color: blue;
+    margin-right: 10px;
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+}
+/* ************voir si je met une image background*********************** */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(blue, white, red);
+    color: rgb(161, 164, 16);
+    border-bottom: 5px solid rgb(188, 170, 64);
+}
+header h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+header h4 {
+    margin-top: -20px;
+    font-size: 20px;
+    color: rgb(188, 170, 64);
+    border-bottom: 1px solid blue;
+}
+header button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(188, 170, 64);
+    border-color: blue;
+    font-size: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(5, 13, 49);
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: rgb(188, 170, 64);
+}
+/* **********pourquoi enlever espace card.right fonctionne? */
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+.main .content .card .right img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 5px solid rgb(188, 170, 64);
+    background-color: black;
+    color: rgb(188, 170, 64);
+    padding: 30px;
+}
+footer h1 {
+    font-family: 'PlayFair Display', sans-serif;
+    border-bottom: 1px solid rgb(41, 41, 112);
+    width: 18%;
+}
+footer .services {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .services .service {
+    margin-right: 30px;
+    padding: 10px;
+
+}
+footer .services .service p {
+    max-width: 300px;
+}
+/* ********ne marche pas???*********** */
+footer #contact {
+    color: rgb(122, 19, 19);
+}
+
+/* ******************PALMARES************************* */
+
+.tableau-style {
+    border-collapse: collapse;
+    min-width: 400;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(208, 218, 18, 0.559);
+    cursor: pointer;
+    margin: 100px auto;
+    border: 2px solid rgb(201, 0, 0);
+}
+thead tr {
+    background-color: rgb(5, 5, 84);
+    color: #fff;
+    text-align: left;
+}
+th, td {
+    padding: 15px 20px;
+}
+tbody tr, td, th {
+     border: 1px solid beige;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b6b4b4;
+}
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    color: wheat;
+}
+/* ****************formulaire**************** */
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+form h1 {
+    font-size: 20px;
+}
+form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: gold;
+}
+form .corp-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corp-formulaire .groupe {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corp-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid red;
+    outline-color: rgb(8, 8, 90);
+    border-radius: 5px;
+}
+form .corp-formulaire .gauche .groupe i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px;
+    color: rgb(30, 28, 131);
+}
+form .corp-formulaire .droite {
+    margin-left: 40px;
+}
+form .corp-formulaire .droite .groupe {
+    height: 100%;
+}
+form .corp-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.444);
+    border: 2px solid gold;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-formulaire button {
+    margin-top: 10px;
+    background-color: rgb(30, 28, 131);
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+   transform: scale(1.05);
+}
+
+
+
+
+@media screen and (max-width:680px) {
+    nav.onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    } 
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img {
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .card {
+        display: block;
+    }
+    footer {
+        padding: 40px;
+    }
+    form .corp-formulaire .droite {
+        margin-left: 0px;
+    }
+
+}
+
